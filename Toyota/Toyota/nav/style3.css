@@ -1,0 +1,504 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #111;
+  padding-bottom: 50px;
+}
+.contanier {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  position: fixed;
+  background-color: #222;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in;
+  z-index: 9999;
+}
+.nav .contanier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in;
+}
+/*  */
+.nav.active {
+  background-color: #fff;
+  box-shadow: 0 2px 10px #222;
+}
+.nav.active .contanier {
+  padding: 10px 0;
+}
+.nav.active a {
+  color: #111;
+}
+.nav a.current,
+.nav a:hover {
+  color: aquamarine;
+  font-weight: bold;
+}
+.toyo {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  margin-top: 5em;
+}
+.toyo .toyo-text {
+  margin-top: 4em;
+}
+.toyo-text h2 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+.toyo-text p {
+  font-size: 1.2em;
+  width: 50%;
+  margin: 0 auto;
+  font-style: italic;
+}
+.toyo2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.to-yo .ele {
+  object-position: 100% 0%;
+  background-position: 100% 0%;
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  background-size: cover;
+}
+.to-yo .logo {
+  position: relative;
+  width: 80px;
+  height: 65px;
+  margin: -98px auto 126px 0;
+  object-fit: contain;
+  background-size: contain;
+  overflow: hidden;
+  vertical-align: middle;
+  display: block;
+  background-position: 50% 50%;
+  opacity: 0.25;
+}
+.toyo2-text .future-text {
+  width: 60%;
+  margin-left: 4em;
+  margin-top: -2em;
+}
+.future-text h2 {
+  font-size: 2em;
+  margin-top: -3.5em;
+  margin-left: 1.5em;
+  width: 65%;
+}
+.future-text p {
+  position: relative;
+  margin-top: 3em;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 2em;
+}
+.toyo2-text a {
+  position: relative;
+  background-image: linear-gradient(to right, #84abec, #cf84fb);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 10px;
+  border-radius: 10em;
+  color: #fff;
+  margin-left: 4em;
+}
+.toyo3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.toyo3 .toyo3-text {
+  width: 40%;
+  margin-left: 3em;
+}
+.toyo3-text h2 {
+  font-size: 2em;
+}
+.toyo3-text p {
+  margin-top: 2em;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 2em;
+}
+.toyo3-text a {
+  position: relative;
+  background-image: linear-gradient(to right, #38a8ae, #84f9fb);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 10px;
+  border-radius: 10em;
+  color: #fff;
+}
+.toyo3-car {
+  object-position: 0% 100%;
+  background-position: 0% 100%;
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: calc(((100% - 940px) / 2) + 610px);
+  height: 433px;
+}
+.toyo4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.toyo4 .toyo4-text {
+  width: 30%;
+}
+.toyo4-text {
+  margin-left: 3em;
+}
+.toyo4-text h2 {
+  margin-top: -2em;
+  font-size: 2.3em;
+  margin-left: 1em;
+}
+.toyo4-text p {
+  margin-top: 6rem;
+  font-size: 1.1em;
+  font-style: italic;
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+.toyo4-text a {
+  position: relative;
+  background-image: linear-gradient(to right, #84abec, #cf84fb);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 10px;
+  border-radius: 10em;
+  color: #fff;
+  margin-left: 1em;
+}
+.toyo-car4 .logoT {
+  object-position: 16% 100%;
+  background-position: 50% 100%;
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  background-size: cover;
+}
+.toyo5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.toyo-car5 .logo5 {
+  object-position: 100% 0%;
+  background-position: 100% 0%;
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  background-size: cover;
+}
+.toyo5-text {
+  width: 30%;
+  margin-right: 5em;
+}
+.toyo5-text h2 {
+  font-size: 2.3em;
+  margin-bottom: 2em;
+}
+.toyo5-text p {
+  font-size: 1.1em;
+  font-style: italic;
+  margin-bottom: 2em;
+}
+.toyo5-text a {
+  position: relative;
+  background-image: linear-gradient(to left, #2c8489, #54f4f7);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 10px;
+  border-radius: 10em;
+  color: #fff;
+}
+.toyo6 {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background-image: linear-gradient(to right, #4081f1, #d79df8);
+  min-height: 100vh;
+}
+.toyo6-text p {
+  width: 60%;
+  font-size: 1.5em;
+  margin-left: 2em;
+  color: #fff;
+}
+.toyo6-the {
+  text-align: center;
+}
+.toyo6-the .white {
+  background-color: #fff;
+  width: 511.33px;
+  height: 364px;
+  border-radius: 25em 0em 0em 25em;
+}
+.toyo6-the a {
+  position: relative;
+  padding-top: 10em;
+  margin-left: 5.5em;
+  position: relative;
+  background-image: linear-gradient(to right, #84abec, #cf84fb);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 10px;
+  border-radius: 10em;
+  color: #fff;
+}
+.toyo6-the h2 {
+  position: relative;
+  padding-top: 3em;
+  padding-left: 2em;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+
+.toyo7 {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.toyo7-logo .logo7 {
+  opacity: 0.3;
+  margin-top: -3em;
+  margin-left: 2em;
+}
+.toyo7-text {
+  position: relative;
+  width: 40%;
+}
+.toyo7-text h2 {
+  font-size: 2.2em;
+  margin-top: -2.9em;
+  margin-left: 1.5em;
+  margin-bottom: 2em;
+}
+.toyo7-text p {
+  width: 59%;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  margin-left: 3em;
+  font-style: italic;
+}
+.toyo7-text p span {
+  position: relative;
+  border: none;
+  color: #38a8ae;
+  cursor: pointer;
+}
+.toyo7-text a {
+  background-image: linear-gradient(to right, #84abec, #cf84fb);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 13px;
+  border-radius: 10em;
+  color: #fff;
+  margin-left: 3em;
+}
+.toyo8 {
+  position: relative;
+  text-align: center;
+  min-height: 31vh;
+  background: linear-gradient(to right, #4081f1, #d79df8);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  margin-top: 2em;
+}
+.toyo8-text .logo8 {
+  margin: 2em;
+  opacity: 0.5;
+}
+.foot-text .social {
+  margin-bottom: 2em;
+}
+
+.foot-text,
+.sem-text p {
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: -3.2em;
+}
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .toyo2 {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* text-align: center; */
+  }
+  .toyo2-text .future-text {
+    width: 90%;
+    /* margin-left: 4em; */
+    margin-top: 2em;
+  }
+  .toyo2-text a {
+    position: relative;
+    background-image: linear-gradient(to right, #84abec, #cf84fb);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    border-radius: 10em;
+    color: #fff;
+    margin-left: 3em;
+  }
+  .future-text h2 {
+    font-size: 2em;
+    margin-top: -3.5em;
+    /* margin-left: 2.8em; */
+    width: 65%;
+    margin-bottom: 3em;
+  }
+  .toyo3 {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* text-align: center; */
+    margin-top: 3em;
+  }
+  .toyo3 .toyo3-text {
+    width: 90%;
+    /* margin-left: 3em; */
+    margin-bottom: 3em;
+  }
+  .toyo4 {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .toyo4 .toyo4-text {
+    width: 90%;
+  }
+  .toyo4-text {
+    margin-left: 3em;
+  }
+  .toyo4-text h2 {
+    margin-top: -2em;
+    font-size: 2.3em;
+    margin-left: 1em;
+  }
+  .toyo4-text p {
+    margin-top: 6rem;
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 2em;
+    margin-left: 1em;
+  }
+  .toyo4-text a {
+    position: relative;
+    background-image: linear-gradient(to right, #84abec, #cf84fb);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    border-radius: 10em;
+    color: #fff;
+    margin-left: 1em;
+  }
+  .toyo-car4 .logoT {
+    object-position: 0% 100%;
+    background-position: 0% 100%;
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    margin-left: 4.4em;
+  }
+  .toyo5 {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .toyo5-text {
+    width: 90%;
+    /* margin-right: 5em; */
+    margin-left: 2em;
+    margin-bottom: 2em;
+  }
+  .toyo6 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    display: block;
+    background-image: linear-gradient(to right, #4081f1, #d79df8);
+    min-height: 100vh;
+  }
+  .toyo6-text p {
+    width: 90%;
+    font-size: 1.5em;
+    margin-left: 2em;
+    color: #fff;
+    margin: 1em 0em 1em 1em;
+  }
+  .toyo6-the {
+    text-align: center;
+    float: right;
+  }
+  .toyo7 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    display: block;
+  }
+  .toyo7-logo .logo7 {
+    opacity: 0.3;
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+  .toyo7-text {
+    position: relative;
+    width: 90%;
+    margin-left: 3em;
+  }
+}
